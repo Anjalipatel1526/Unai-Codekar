@@ -1,13 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Navbar } from "@/components/hackathon/Navbar";
+import { Hero } from "@/components/hackathon/Hero";
+import { About } from "@/components/hackathon/About";
+import { Domains } from "@/components/hackathon/Domains";
+import { Prizes } from "@/components/hackathon/Prizes";
+import { SponsorChallenges } from "@/components/hackathon/SponsorChallenges";
+import { JudgesMentors } from "@/components/hackathon/JudgesMentors";
+import { Timeline } from "@/components/hackathon/Timeline";
+import { Sponsors } from "@/components/hackathon/Sponsors";
+import { Gallery } from "@/components/hackathon/Gallery";
+import { Team } from "@/components/hackathon/Team";
+import { FAQ } from "@/components/hackathon/FAQ";
+import { Footer } from "@/components/hackathon/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen bg-background">
+      <Navbar />
+      <Hero />
+      <About />
+      <Domains />
+      <Prizes />
+      <SponsorChallenges />
+      <JudgesMentors />
+      <Timeline />
+      <Sponsors />
+      <Gallery />
+      <Team />
+      <FAQ />
+      <Footer />
+    </main>
   );
 };
 
