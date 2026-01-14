@@ -12,7 +12,6 @@ import { FAQ } from "@/components/hackathon/FAQ";
 import { Footer } from "@/components/hackathon/Footer";
 
 import Hyperspeed, { hyperspeedPresets } from "@/components/ui/Hyperspeed";
-import LightPillar from "@/components/ui/LightPillar";
 
 import { useState } from "react";
 // ... existing imports
@@ -24,19 +23,6 @@ const Index = () => {
     <main className="min-h-screen bg-background relative">
       <div className="fixed inset-0 z-0 text-white bg-black">
         <Hyperspeed effectOptions={hyperspeedPresets.one} />
-        <LightPillar
-          topColor="#5227FF"
-          bottomColor="#FF9FFC"
-          intensity={1.0}
-          rotationSpeed={0.3}
-          glowAmount={0.005}
-          pillarWidth={3.0}
-          pillarHeight={0.4}
-          noiseIntensity={0.5}
-          pillarRotation={0}
-          interactive={false}
-          mixBlendMode="screen"
-        />
       </div>
       <div className="relative z-10">
         {showNavbar && <Navbar />}
