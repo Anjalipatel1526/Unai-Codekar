@@ -11,7 +11,7 @@ import { Team } from "@/components/hackathon/Team";
 import { FAQ } from "@/components/hackathon/FAQ";
 import { Footer } from "@/components/hackathon/Footer";
 
-import { GravityStarsBackground } from "@/components/ui/GravityStarsBackground";
+import Hyperspeed, { hyperspeedPresets } from "@/components/ui/Hyperspeed";
 import LightPillar from "@/components/ui/LightPillar";
 
 import { useState } from "react";
@@ -22,8 +22,8 @@ const Index = () => {
 
   return (
     <main className="min-h-screen bg-background relative">
-      <div className="fixed inset-0 z-0 text-white">
-        <GravityStarsBackground className="absolute inset-0 flex items-center justify-center pointer-events-none" />
+      <div className="fixed inset-0 z-0 text-white bg-black">
+        <Hyperspeed effectOptions={hyperspeedPresets.one} />
         <LightPillar
           topColor="#5227FF"
           bottomColor="#FF9FFC"

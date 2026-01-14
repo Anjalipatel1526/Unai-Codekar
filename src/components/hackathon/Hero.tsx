@@ -52,52 +52,52 @@ export const Hero = ({ onIntroComplete }: { onIntroComplete?: () => void }) => {
               delay={150}
               animateBy="letters"
               direction="top"
-              className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-cyan-400 mb-2"
+              className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl 3xl:text-9xl 4xl:text-[11rem] font-bold text-cyan-400 mb-2"
             />
             <BlurText
               text="CodeKar 2026"
               delay={150}
               animateBy="letters"
               direction="top"
-              className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white"
+              className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl 3xl:text-9xl 4xl:text-[11rem] font-bold text-white"
             />
           </div>
 
           {/* Tagline */}
-          <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto mb-8 animate-fade-in-up animation-delay-400">
+          <p className="text-xl md:text-2xl 3xl:text-4xl text-slate-300 max-w-2xl 3xl:max-w-4xl mx-auto mb-8 3xl:mb-12 animate-fade-in-up animation-delay-400">
             Innovation, Creativity, and Building the Future
           </p>
 
           {/* Event details */}
-          <div className="flex flex-wrap justify-center gap-6 mb-10 animate-fade-in-up animation-delay-600">
-            <div className="flex items-center gap-2 text-slate-300">
-              <Calendar className="w-5 h-5 text-primary" />
+          <div className="flex flex-wrap justify-center gap-6 3xl:gap-12 mb-10 3xl:mb-16 animate-fade-in-up animation-delay-600">
+            <div className="flex items-center gap-2 text-slate-300 3xl:text-2xl">
+              <Calendar className="w-5 h-5 3xl:w-8 3xl:h-8 text-primary" />
               <span>February 15-17, 2026</span>
             </div>
 
-            <div className="flex items-center gap-2 text-slate-300">
-              <MapPin className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-2 text-slate-300 3xl:text-2xl">
+              <MapPin className="w-5 h-5 3xl:w-8 3xl:h-8 text-primary" />
               <span>Chennai,Tamil Nadu</span>
             </div>
-            <div className="flex items-center gap-2 text-slate-300">
-              <Users className="w-5 h-5 text-primary" />
+            <div className="flex items-center gap-2 text-slate-300 3xl:text-2xl">
+              <Users className="w-5 h-5 3xl:w-8 3xl:h-8 text-primary" />
               <span>50+ Hackers</span>
             </div>
           </div>
 
           {/* CTA buttons */}
-          <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up animation-delay-600">
+          <div className="flex flex-wrap justify-center gap-4 3xl:gap-8 animate-fade-in-up animation-delay-600">
             <Button
               size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 card-glow"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg 3xl:text-2xl px-8 py-6 3xl:px-12 3xl:py-8 card-glow"
             >
               Apply Now
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-5 h-5 3xl:w-8 3xl:h-8" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-primary/50 text-primary hover:bg-primary/10 text-lg px-8 py-6"
+              className="border-primary/50 text-primary hover:bg-primary/10 text-lg 3xl:text-2xl px-8 py-6 3xl:px-12 3xl:py-8"
             >
               Join Community
             </Button>
