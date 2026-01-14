@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import GradientText from "@/components/ui/GradientText";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -30,8 +31,15 @@ export const Navbar = () => {
         }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between relative z-10">
-        <a href="#" className="text-2xl 3xl:text-4xl font-bold text-gradient">
-          CodeKar
+        <a href="#">
+          <GradientText
+            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+            animationSpeed={3}
+            showBorder={false}
+            className="text-2xl 3xl:text-4xl font-bold"
+          >
+            CodeKar
+          </GradientText>
         </a>
 
         {/* Desktop Navigation */}

@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import GradientText from "@/components/ui/GradientText";
 
 const faqs = [
   {
@@ -55,7 +56,14 @@ export const FAQ = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">Frequently</span> Asked Questions
+            <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="text-4xl md:text-5xl font-bold"
+            >
+              Frequently
+            </GradientText> Asked Questions
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Everything you need to know about the hackathon

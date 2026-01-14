@@ -1,3 +1,5 @@
+import GradientText from "@/components/ui/GradientText";
+
 const sponsorTiers = [
   {
     tier: "Title Sponsor",
@@ -44,7 +46,14 @@ export const Sponsors = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">Our</span> Sponsors & Partners
+            <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="text-4xl md:text-5xl font-bold"
+            >
+              Our
+            </GradientText> Sponsors & Partners
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Made possible by our amazing sponsors and community partners

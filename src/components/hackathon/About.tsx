@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { Users, Building2, MapPin, Trophy } from "lucide-react";
 import MagicBento from "@/components/ui/MagicBento";
+import GradientText from "@/components/ui/GradientText";
 
 
 const stats = [
@@ -74,7 +75,14 @@ export const About = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">About</span> The Hackathon
+            <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="text-4xl md:text-5xl font-bold"
+            >
+              About
+            </GradientText> The Hackathon
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Join the ultimate innovation challenge where brilliant minds come

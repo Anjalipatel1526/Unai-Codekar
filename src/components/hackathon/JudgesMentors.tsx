@@ -1,4 +1,5 @@
 import { Linkedin } from "lucide-react";
+import GradientText from "@/components/ui/GradientText";
 
 const judges = [
   {
@@ -85,7 +86,14 @@ export const JudgesMentors = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="text-gradient">Our</span> Judges
+              <GradientText
+                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                animationSpeed={3}
+                showBorder={false}
+                className="text-4xl md:text-5xl font-bold"
+              >
+                Our
+              </GradientText> Judges
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
               Industry experts who will evaluate and mentor your projects
@@ -102,7 +110,14 @@ export const JudgesMentors = () => {
         <div>
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="text-gradient">Our</span> Mentors
+              <GradientText
+                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                animationSpeed={3}
+                showBorder={false}
+                className="text-4xl md:text-5xl font-bold"
+              >
+                Our
+              </GradientText> Mentors
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
               Experienced professionals ready to guide you throughout the hackathon

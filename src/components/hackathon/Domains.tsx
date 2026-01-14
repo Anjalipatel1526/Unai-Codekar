@@ -6,6 +6,7 @@ import {
   Leaf,
   Lightbulb,
 } from "lucide-react";
+import GradientText from "@/components/ui/GradientText";
 
 import webAppImg from "@/assets/tracks/web-app.png";
 import healthcareImg from "@/assets/tracks/healthcare.png";
@@ -66,7 +67,14 @@ export const Domains = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">Hackathon</span> Tracks
+            <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="text-4xl md:text-5xl font-bold"
+            >
+              Hackathon
+            </GradientText> Tracks
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Choose your domain of interest and build solutions that make a difference

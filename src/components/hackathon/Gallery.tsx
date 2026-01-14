@@ -1,4 +1,5 @@
 import Masonry from "@/components/ui/Masonry";
+import GradientText from "@/components/ui/GradientText";
 const galleryImages = [
   { id: 1, alt: "Hackers collaborating" },
   { id: 2, alt: "Workshop session" },
@@ -17,7 +18,14 @@ export const Gallery = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">Event</span> Gallery
+            <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="text-4xl md:text-5xl font-bold"
+            >
+              Event
+            </GradientText> Gallery
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Moments captured from our previous hackathon editions

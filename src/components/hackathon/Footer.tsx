@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone, Instagram, Linkedin, Twitter, Github, MessageCircle } from "lucide-react";
+import GradientText from "@/components/ui/GradientText";
 
 const quickLinks = [
   { name: "About", href: "#about" },
@@ -47,8 +48,15 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <a href="#" className="text-3xl font-bold text-gradient mb-4 block">
-              CodeKar
+            <a href="#" className="mb-4 block">
+              <GradientText
+                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                animationSpeed={3}
+                showBorder={false}
+                className="text-3xl font-bold"
+              >
+                CodeKar
+              </GradientText>
             </a>
             <p className="text-muted-foreground mb-6 max-w-md">
               Join India's premier student hackathon and build solutions that
