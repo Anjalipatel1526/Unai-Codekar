@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { Users, Building2, MapPin, Trophy } from "lucide-react";
+import MagicBento from "@/components/ui/MagicBento";
 
 
 const stats = [
@@ -106,20 +107,19 @@ export const About = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="glass rounded-2xl p-6 text-center hover:card-glow transition-all duration-300 group"
-            >
-              <stat.icon className="w-10 h-10 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <div className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                <CounterAnimation target={stat.value} suffix={stat.suffix} />
-              </div>
-              <p className="text-sm text-muted-foreground">{stat.label}</p>
-            </div>
-          ))}
-        </div>
+        {/* Stats */}
+        <MagicBento
+          textAutoHide={true}
+          enableStars={true}
+          enableSpotlight={true}
+          enableBorderGlow={true}
+          enableTilt={true}
+          enableMagnetism={true}
+          clickEffect={true}
+          spotlightRadius={300}
+          particleCount={12}
+          glowColor="132, 0, 255"
+        />
       </div>
     </section>
   );
